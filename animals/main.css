@@ -1,0 +1,58 @@
+:root {
+    --background-color: black;
+    --primary-color: purple;
+    --accent-color: lavender;
+    --text-color: white;
+    --font-size-h1: 48px;
+    --font-size-caption: 24px;
+    --spacing-small: 20px;
+    --img-width: 450px;
+    --border-radius: 50px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+h1 {
+    text-align: center;
+    color: var(--text-color);
+    font-size: var(--font-size-h1);
+}
+
+figure img {
+    display: block;
+    width: var(--img-width);
+    height: auto;
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-small);
+}
+
+figure figcaption {
+    display: block;
+    text-align: center;
+    font-size: var(--font-size-caption);
+    background: var(--accent-color);
+    padding: var(--spacing-small);
+    border-radius: var(--border-radius);
+}
+
+figure {
+    margin: 0px 15px 0px auto;
+    display: inline-block;
+    padding: var(--spacing-small);
+    background: var(--primary-color);
+    border-radius: var(--border-radius);
+}
+
+section {
+    width: 65%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--spacing-small);
+}
