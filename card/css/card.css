@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+.card{
+    width: 350px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px grey;
+    text-shadow: 2px 2px 5px turquoise;
+    border-radius: 10px;
+    background-color: rgb(23, 21, 21);
+}
+
+.card img{
+    width: 100%;
+}
+
+.card h2{
+    color: white;
+    text-align: center;
+    writing-mode: vertical-lr;
+    float: left;
+    margin: 10px 5px;
+}
+
+
+.card figcaption{
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.card p{
+    color: white;
+    margin: 15px;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
