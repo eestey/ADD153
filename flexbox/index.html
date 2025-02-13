@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Layout</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+  <div class="container">
+    <aside class="aside">
+        <h2>Vote for Your Favorite Photo!</h2>
+        <div class="poll-options">
+          <div class="poll-option" data-vote="Photo 1">
+            <img src="img/fluid-1.jpeg" alt="Image 1">
+            <p>Photo 1</p>
+          </div>
+          <div class="poll-option" data-vote="Photo 2">
+            <img src="img/fluid-2.jpeg" alt="Image 2">
+            <p>Photo 2</p>
+          </div>
+          <div class="poll-option" data-vote="Photo 3">
+            <img src="img/fluid-3.jpeg" alt="Image 3">
+            <p>Photo 3</p>
+          </div>
+          <div class="poll-option" data-vote="Photo 4">
+            <img src="img/fluid-4.jpeg" alt="Image 4">
+            <p>Photo 4</p>
+          </div>
+          <div class="poll-option" data-vote="Photo 5">
+            <img src="img/fluid-5.jpeg" alt="Image 5">
+            <p>Photo 5</p>
+          </div>
+        </div>
+        <button class="submit-vote">Submit Vote</button>
+      </aside>
+      
+        <main class="main">
+            <div class="card">
+                <img src="img/fluid-1.jpeg" alt="Image 1">
+                <h3>Card 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <img src="img/fluid-2.jpeg" alt="Image 2">
+                <h3>Card 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <img src="img/fluid-3.jpeg" alt="Image 3">
+                <h3>Card 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <img src="img/fluid-4.jpeg" alt="Image 4">
+                <h3>Card 4</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <img src="img/fluid-5.jpeg" alt="Image 5">
+                <h3>Card 5</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button>Read More</button>
+            </div>
+        </main>
+  </div>
 
+  <script>
+    const submitButton = document.querySelector('.submit-vote');
+    const pollOptions = document.querySelectorAll('.poll-option');
+    let selectedVote = null;
+
+    pollOptions.forEach(option => {
+      option.addEventListener('click', () => {
+        pollOptions.forEach(opt => opt.classList.remove('selected'));
+        option.classList.add('selected');
+        selectedVote = option.getAttribute('data-vote');
+      });
+    });
+
+    submitButton.addEventListener('click', () => {
+      if (selectedVote) {
+        alert(`You voted for: ${selectedVote}`);
+      } else {
+        alert('Please select a photo to vote!');
+      }
+    });
+  </script>
+
+</body>
+</html>
