@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations - Kami no Kaze</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body style="background-image: url(img/background_img.jpg);" alt="Kami no Kaze Symbol" class="symbol">
+    <header>
+        <img src="img/logo.jpg" alt="Kami no Kaze Logo" class="logo">
+        <nav>
+            <img src="img/wind.jpg" alt="wind">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Tasting Menu</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+            </ul>
+            <img src="img/wind.jpg" alt="wind">
+        </nav>
+    </header>
+    <main>
+        <section class="reservation-form">
+            <h2>Make a Reservation</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+                
+                <button type="submit" class="cta-button">Reserve Now</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Kami no Kaze 2025</p>
+        <img src="img/wind.jpg" alt="Kami no Kaze Symbol" class="symbol-footer">
+    </footer>
+</body>\n
+</html>
