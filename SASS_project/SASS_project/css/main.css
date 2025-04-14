@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff3b0;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4b2e83;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #d81159;
+}
+
+body {
+  font-family: "Shrikhand", cursive;
+  background: linear-gradient(135deg, #ffb347, #ffcc33);
+  margin: 0;
+  padding: 0;
+  color: #4b2e83;
+}
+
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+header {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #2e1a47;
+}
+
+.hero {
+  width: 80%;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.2rem;
+}
+
+button {
+  background: #d81159;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #a60f43;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.feature {
+  background: #fff3b0;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-content img {
+  width: 300px;
+  border-radius: 20px;
+}
+
+.timeline {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+}
+
+.timeline div {
+  margin: 1rem 0;
+}
+
+.categories select {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid #4b2e83;
+}
+
+.flash-sale {
+  background: #f9a825;
+  padding: 1rem;
+  margin: 2rem 0;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.product {
+  background: #fff3b0;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-name {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.price {
+  color: #d81159;
+  margin: 0.5rem 0;
+}
+
+footer {
+  margin-top: 4rem;
+  padding: 2rem;
+  background: #fff3b0;
+  border-top: 2px solid #4b2e83;
+}
+
+footer input[type=email] {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid #4b2e83;
+  margin-right: 1rem;
+}/*# sourceMappingURL=main.css.map */
