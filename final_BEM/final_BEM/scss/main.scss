@@ -1,0 +1,43 @@
+@import 'cssreset';
+
+  
+@import 'hero';
+
+
+@import 'gallery';
+
+
+@import 'footer';
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F7FF;
+    color: #333;
+    line-height: 1.6;
+}
+
+  
+  @media (max-width: 768px) {
+    .hero {
+      &__title {
+        font-size: 3rem;
+      }
+  
+      &__description {
+        font-size: 1.2rem;
+      }
+    }
+  
+    .newsblurb {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .gallery {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
